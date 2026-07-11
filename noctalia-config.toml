@@ -1,0 +1,168 @@
+[bar]
+order = [ "default", "floaty" ]
+
+    [bar.default]
+    enabled = false
+
+    [bar.floaty]
+    background_opacity = 0.69999998435378075
+    capsule = true
+    capsule_opacity = 0.0
+    capsule_padding = 2.0
+    capsule_radius = 8
+    end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+    margin_edge = 2
+    start = [ "workspaces" ]
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 400.0
+    box_width = 1904.0
+    cx = 960.0
+    cy = 1024.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        background_opacity = 0.0
+        bands = 44
+        centered = false
+        mirrored = true
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 192.0
+    box_width = 432.0
+    cx = 280.0
+    cy = 216.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        background_opacity = 0.0
+
+[dock]
+auto_hide = true
+background_opacity = 0.69999998435378075
+enabled = true
+pinned = [ "zen", "kitty", "files" ]
+reserve_space = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 112.0
+    box_width = 464.0
+    cx = 960.0
+    cy = 1104.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_password_hint = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 224.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 264.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        clock_style = "digital"
+
+[plugins]
+enabled = [ "noctalia/notes" ]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+ui_scale = 1.1000000089406967
+
+    [shell.launcher]
+    categories = false
+
+    [shell.panel]
+    control_center_position = "center"
+    session_placement = "floating"
+    session_position = "center"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Monochrome"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "kitty", "niri" ]
+
+[wallpaper]
+directory = "/home/flickowens/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/flickowens/Pictures/Wallpapers/everforest.webp"
+
+    [wallpaper.last]
+    path = "/home/flickowens/Pictures/Wallpapers/everforest.webp"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/flickowens/Pictures/Wallpapers/everforest.webp"
+
+[widget.battery]
+display_mode = "graphic"
+show_label = false
+
+[widget.brightness]
+enabled = true
+show_label = false
+
+[widget.clock]
+format = "{:%H:%M} {:%d-%m-%y}"
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
